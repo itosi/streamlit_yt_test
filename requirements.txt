@@ -4,5 +4,5 @@ matplotlib==3.8.0
 matplotlib-inline==0.1.6
 numpy==1.24.3
 seaborn==0.12.2
-azure-adentity==1.13.0
+azure.adentity==1.13.0
 

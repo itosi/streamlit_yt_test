@@ -45,28 +45,28 @@ import os
 
 
 
-from azure.identity import DefaultAzureCredential
+# from azure.identity import DefaultAzureCredential
 
-# Azure AD Authentication
-credential = DefaultAzureCredential()
+# # Azure AD Authentication
+# credential = DefaultAzureCredential()
 
 
-server_name = 'mneu-sql-d-dbadvan-001.database.windows.net'
-database_name = 'mneu-db-d-dbadvan-pricing-001'
+# server_name = 'mneu-sql-d-dbadvan-001.database.windows.net'
+# database_name = 'mneu-db-d-dbadvan-pricing-001'
 
-# Create the connection string
-connection_string = \
-f"Driver={{ODBC Driver 17 for SQL Server}};\
-Server={server_name};\
-Database={database_name};\
-Authentication=ActiveDirectoryInteractive"
+# # Create the connection string
+# connection_string = \
+# f"Driver={{ODBC Driver 17 for SQL Server}};\
+# Server={server_name};\
+# Database={database_name};\
+# Authentication=ActiveDirectoryInteractive"
 
-# Connect to the server
-conn = pyodbc.connect(connection_string, authentication = credential)
+# # Connect to the server
+# conn = pyodbc.connect(connection_string, authentication = credential)
 
-# Create the cursor; an object that is needed, if you want to run SQL queries
-cursor = conn.cursor()
-#print(conn)
+# # Create the cursor; an object that is needed, if you want to run SQL queries
+# cursor = conn.cursor()
+# #print(conn)
 
 
 
